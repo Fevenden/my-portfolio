@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 2px solid black;
+  background-color: gainsboro;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0px;
+  left: 0px;
+  display: flex;
+}
