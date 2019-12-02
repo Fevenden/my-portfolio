@@ -24,7 +24,7 @@ main {
   margin-top: 80px;
 }
 
-.aboutMe, .projects {
+.aboutMe, .projects-box {
   text-align: center;
   width: 90%;
   border: 2px solid black;
@@ -35,4 +35,32 @@ main {
 
 .aboutMe p{
   text-align: left;
+}
+
+img {
+ width:90%;
+}
+
+.project1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.project {
+  border-bottom: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+}
+
+footer h2 {
+  margin: auto;
+  text-align: center;
 }
