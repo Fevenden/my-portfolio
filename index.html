@@ -7,15 +7,15 @@
   <meta name="author" content="Freedom Evenden">
   <link rel="stylesheet" href="style.css">
   <title>Freedom's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-    
 </head>
 <body>
   <header role="banner">
     <h1>Freedom Evenden</h1>
     <nav role="navigation">
       <ul class="contactInfo">
-        <li><a href="contact">contact</a></li>
+        <li><a href="#" class="contactLink">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -26,24 +26,32 @@
     </section>
     <section class="projects-box">      
       <h2>Projects</h2>
-      <section class="project1" id="project1">
+      <section class="project" id="project1">
+        <img src="images/Skyrim Quiz.png" alt="picture of the main page of my Skyrim quiz." id="skyrimQuizImg" class="projectImg">
         <h3>Skyrim Quiz</h3>
-        <img src="images/Skyrim Quiz.png" alt="picture of the main page of my Skyrim quiz." class="skyrimQuizImg">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia tellus vel diam ultrices consequat. In ornare dignissim molestie. Aenean venenatis felis eget metus gravida, sed congue felis placerat.</p>
-        <a href="https://github.com/Fevenden/quiz-app-project">REPO</a>
-        <a href="https://fevenden.github.io/quiz-app-project/">LIVE</a>
+        <div class="linkContainer" role="link">
+          <a class="styleMe" href="https://github.com/Fevenden/quiz-app-project">REPO</a>
+          <a href="https://fevenden.github.io/quiz-app-project/">LIVE</a>
+        </div>
       </section>
       <section class="project" id="project2">
-        <h3>Project 2</h3><img src="images/FillerImg.png" alt="filler" class="imgFiller">
+        <img src="images/FillerImg.png" alt="filler" class="projectImg">
+        <h3>Project 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia tellus vel diam ultrices consequat. In ornare dignissim molestie. Aenean venenatis felis eget metus gravida, sed congue felis placerat.</p>
-        <a href="filler">REPO</a>
-        <a href="filler">LIVE</a>
+        <div class="linkContainer" role="link">
+          <a class="styleMe" href="filler">REPO</a>
+          <a href="filler">LIVE</a>
+        </div>
       </section>
     </section>
   </main>
-  <footer>
-    <h2>footer</h2>
+  <footer class="footer"></footer>
   </footer>
-  <script src="index.html"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>  
 </body>
 </html>
