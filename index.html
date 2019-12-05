@@ -13,48 +13,43 @@
 <body>
   <header role="banner">
     <h1>Freedom Evenden</h1>
-    <nav class="dropDown">
-      <ul>
-        <li>Skyrim Quiz</li>
-        <li>footer</li>
+    <nav>
+      <div class="hiddenMenu" role="menu">
+        <ul class=hiddenList>
+          <li class="hiddenItem"><a href="#" class="hiddentItemLink navLink" id="aboutMeLink" role="navigation">About Me</a></li>
+          <li class="hiddenItem"><a href="#" class="hiddentItemLink navLink" id="myProjectsLink" role="navigation">My Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <button class="hamburger" role="button">&#9776;</button>
+    <nav class="menu">
+      <ul class="navList">
+        <li class="navListItem"><a href="#" class="navLink" id="skyrimLink" role="navigation">Skyrim Quiz</a></li>
       </ul>
     </nav>
-    <button class="hamburger" role="navigation">&#9776;</button>
   </header>
   <main role="main">
     <section class="aboutMe">
       <h2>About Me</h2>
-      <p>I am a Web developer and Currently attending Thinkful’s full-stack flex program. Coding is a natural passion for me, I grew up around technology and early on I was interested in computers and what makes them work. Creating web apps using abstract languages that only exist in a virtual world is like magic to me and I will always be excited to use and practice it.
-          I enjoy challenging myself and many of my hobbies reflect this. You might find me at the gym lifting weights, playing video games, or hiking up a mountain. I have a passion for music and you could say I know my way around a guitar. I am always looking for a new  challenge so whatever it is, bring it on.
-        </p>
+      <p>I am a Web developer and Currently attending Thinkful’s full-stack flex program. Coding is a natural passion for me. I grew up around computers, and after building my first one at 15, I wanted to learn everything I could about them. Creating web apps using abstract languages that only exist in a virtual world is like magic to me, and I will always be excited to use and practice it. I enjoy challenging myself, and many of my hobbies reflect this. You might find me at the gym lifting weights, playing video games, or hiking up a mountain. I have a passion for music, and you could say I know my way around a guitar. I am always looking for a new challenge, so whatever it is, bring it on.</p>
       <address class="contactMe">
         <div class=styleMe>
-          <a class="contact" href="mailto:ftevenden1@gmail.com">Email</a>
-          <a class="contact" href="https://gist.github.com/Fevenden">GitHub</a>
-          <a class="contact" href="https://www.linkedin.com/in/freedom-evenden-309b99194/">linkedin</a>
+          <a class="contact" href="mailto:ftevenden1@gmail.com" role="link">Email</a>
+          <a class="contact" href="https://gist.github.com/Fevenden" role="link">GitHub</a>
+          <a class="contact" href="https://www.linkedin.com/in/freedom-evenden-309b99194/" role="link">linkedin</a>
         </div>
       </address>
     </section>
     <section class="projects-box">      
       <h2>My Projects</h2>
       <section class="project" id="project1">
-        <img src="images/Skyrim Quiz.png" alt="picture of the main page of my Skyrim quiz." id="skyrimQuizImg" class="projectImg">
+        <img src="images/Skyrim Quiz.png" alt="picture of the main page of my Skyrim quiz." role="img" id="skyrimQuizImg" class="projectImg">
         <h3>Skyrim Quiz</h3>
-        <p>This was my first project for the Thinkful program, It’s a simple quiz app that directs users through a series of 5 questions. To create this app I used HTML, CSS, JavaScript and jQuery.</p>
-        <div class="linkContainer" role="link">
-          <a class="projectLink" href="https://github.com/Fevenden/quiz-app-project">REPO</a>
-          <a class="projectLink" href="https://fevenden.github.io/quiz-app-project/">LIVE</a>
+        <p>I created this app as my first project for the Thinkful program. It’s a simple quiz app that directs users through a series of 5 questions. To create this app, I used HTML, CSS, JavaScript, and jQuery.</p>
+        <div class="linkContainer">
+          <a class="projectLink" href="https://github.com/Fevenden/quiz-app-project" role="link">REPO</a>
+          <a class="projectLink" href="https://fevenden.github.io/quiz-app-project/" role="link">LIVE</a>
         </div>
-      </section>
-      <!-- <section class="project" id="project2">
-        <img src="images/FillerImg.png" alt="filler" class="projectImg">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia tellus vel diam ultrices consequat. In ornare dignissim molestie. Aenean venenatis felis eget metus gravida, sed congue felis placerat.</p>
-        <div class="linkContainer" role="link">
-          <a class="projectLink" href="filler">REPO</a>
-          <a class="projectLink" href="filler">LIVE</a>
-        </div> -->
-      </section>
     </section>
   </main>
   <footer class="footer">
