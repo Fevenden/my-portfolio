@@ -4,14 +4,15 @@ function scrollTo(destination) {
      }, 1000);
 }
 
-
-
 function handleClickContact() {
 $('.contactLink').click(function(e) {
     e.preventDefault()
-    scrollTo(".footer")
+    scrollTo("header")
 })
-
 }
 
-$(handleClickContact)
+function init() {
+    handleClickContact()
+}
+
+$(init)
