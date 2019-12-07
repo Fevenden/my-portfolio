@@ -81,6 +81,13 @@ main {
   margin-top: 80px;
 }
 
+.heroImg {
+  align-self: center;
+  margin-top: 20px;
+  border-radius: 100px;
+  width: 150px;
+}
+
 .aboutMe {
   display: flex;
   flex-direction: column;
@@ -199,12 +206,24 @@ a:active {
     width: 30%;
     top: 50px;
     border-radius: 0;
-    padding: 50px
+    padding: 50px;
+    overflow: auto;
+    transition: left 1s ease-in-out;
+  }
+
+  .aboutMe.hide {
+    left: -100%;
+  }
+
+  main.center {
+    margin-left: 20%;
+    margin-right: auto
   }
 
   main {
     width: 60%;
     margin-left: 37%;
+    transition: all 1s ease-in-out;
   }
 
   header {
@@ -226,6 +245,8 @@ a:active {
 
   .navList li {
     display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 }
