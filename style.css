@@ -8,7 +8,6 @@
 
 header {
   background-color: black;
-  color: white;
   width: 100%;
   height: 50px;
   position: fixed;
@@ -20,6 +19,10 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   box-shadow: 1px 1px 5px grey
+}
+
+h1 {
+  color: white;
 }
 
 footer {
@@ -135,6 +138,10 @@ footer h2 {
 .linkContainer {
   display: flex;
   justify-content: space-evenly;
+}
+
+.navLink, .projectLink {
+  color: rgb(0, 255, 149);
 }
 
 a:link {
