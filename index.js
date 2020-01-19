@@ -25,6 +25,11 @@ function handleNavClick() {
     e.preventDefault();
     scrollTo('#project1');
   });
+
+  $('#spaceyLink').click(function(e) {
+    e.preventDefault();
+    scrollTo('#project2');
+  })
 }
 
 //displays or hides dropdown menu when user taps hamburger

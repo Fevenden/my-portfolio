@@ -18,7 +18,7 @@ header {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
-  box-shadow: 1px 1px 5px grey
+  box-shadow: 1px 1px 5px grey;
 }
 
 h1 {
@@ -41,8 +41,8 @@ footer {
   left: 0;
   background-color: rgba(0,0,0,0.5);
   top: -50px;
-  z-index: -1;
   transition: top 0.5s;
+  z-index: -1;
 }
 
 .hiddenMenu.expose{
@@ -182,10 +182,12 @@ a:active {
 .styleMe {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .contact {
   display: inline-block;
+  margin-top: 5px;
 }
 
 .hamburger {
