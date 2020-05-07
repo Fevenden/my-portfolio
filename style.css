@@ -53,6 +53,12 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  z-index: -1;
+}
+
+.hiddenItem {
+  display: flex;
+  z-index: -1;
 }
 
 h1 {
@@ -126,6 +132,7 @@ main {
 .projectImg {
   align-self: center;
   width: 90%;
+  border-radius: 10px;
 }
 
 footer {
