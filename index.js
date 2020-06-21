@@ -35,6 +35,11 @@ function handleNavClick() {
     e.preventDefault()
     scrollTo('#project3')
   })
+
+  $('#blogiumLink').click(e => {
+    e.preventDefault()
+    scrollTo('#project4')
+  })
 }
 
 //displays or hides dropdown menu when user taps hamburger
