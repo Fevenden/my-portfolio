@@ -1,103 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Freedom Evenden's web portfolio.">
-  <meta name="author" content="Freedom Evenden">
-  <link rel="stylesheet" href="style.css">
-  <title>Freedom Evenden's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-</head>
-<body>
-  <header>
-    <h1>Freedom Evenden</h1>
-    <nav>
-      <div class="hiddenMenu">
-        <ul class=hiddenList>
-          <li class="hiddenItem"><a class="hiddentItemLink navLink" id="aboutMeLink" role="navigation">About Me</a></li>
-          <li class="hiddenItem"><a class="hiddentItemLink navLink" id="myProjectsLink" role="navigation">My Projects</a></li>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Freedom Evenden's web portfolio." />
+    <meta name="author" content="Freedom Evenden" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Freedom Evenden's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>Freedom Evenden</h1>
+      <nav>
+        <div class="hiddenMenu">
+          <ul class="hiddenList">
+            <li class="hiddenItem">
+              <a
+                class="hiddentItemLink navLink"
+                id="aboutMeLink"
+                role="navigation"
+                >About Me</a
+              >
+            </li>
+            <li class="hiddenItem">
+              <a
+                class="hiddentItemLink navLink"
+                id="myProjectsLink"
+                role="navigation"
+                >My Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="hamburger">&#9776;</button>
+      <nav class="menu">
+        <ul class="navList">
+          <li class="navListItem">
+            <a class="navLink" id="aboutMeLink2" role="navigation">About Me</a>
+          </li>
+          <li class="navListItem">
+            <a class="navLink" id="blogiumLink" role="navigation">Blogium</a>
+          </li>
+          <li class="navListItem">
+            <a class="navLink" id="buildTechLink" role="navigation"
+              >BuildTech</a
+            >
+          </li>
+          <li class="navListItem">
+            <a class="navLink" id="spaceyLink" role="navigation">Spacey</a>
+          </li>
+          <li class="navListItem">
+            <a class="navLink" id="skyrimLink" role="navigation">Skyrim Quiz</a>
+          </li>
         </ul>
-      </div>
-    </nav>
-    <button class="hamburger">&#9776;</button>
-    <nav class="menu">
-      <ul class="navList">
-        <li class="navListItem"><a class="navLink" id="aboutMeLink2" role="navigation">About Me</a></li>
-        <li class="navListItem"><a class="navLink" id="blogiumLink" role="navigation">Blogium</a></li>
-        <li class="navListItem"><a class="navLink" id="buildTechLink" role="navigation">BuildTech</a></li>
-        <li class="navListItem"><a class="navLink" id="spaceyLink" role="navigation">Spacey</a></li>
-        <li class="navListItem"><a class="navLink" id="skyrimLink" role="navigation">Skyrim Quiz</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="center">
-    <section class="aboutMe hide">
-      <h2>About Me</h2>
-      <img src="images/heroImg2.jpg" alt="a picture of Freedom" id="heroImg" class="heroImg">
-      <p>I am a Full-Stack Developer specializing in React and NodeJS. I'm passionate about tech and I love experimenting with new tools. I've been building computers since I was fifteen years old and any time I get a knew gadget I have to find all the ways I can tinker with it (or break it). I have an eclectic taste in literature; some of my favorite authors include Albert Camus, Patrick Rothfuss, Ken Follett, and Jeanette Winterson. I'm also a big fan of World of Warcraft (for the Horde!). I'm open to new opportunities and would love to work with a team of knowledgeable programmers that can help me learn and grow as a developer.</p>
-      <address class="contactMe">
-        <div class=styleMe>
-          <a class="contact" href="mailto:freedom.evenden@pm.me">Email</a>
-          <a class="contact" href="https://github.com/f3ve" target="_blank">GitHub</a>
-          <a class="contact" href="https://www.linkedin.com/in/freedom-evenden-dev/" target="_blank">linkedin</a>
-          <a class="contact" href="https://medium.com/@ftevenden1" target="_blank">Blog</a>
-        </div>
-      </address>
-    </section>
-    <section class="projects-box">      
-      <h2>My Projects</h2>
-      <section class="project" id="project4">
-        <img src="images/blogium.png" alt="Picture of a post from Blogium" id="blogiumImg" class="projectImg">
-        <h3>Blogium</h3>
-        <p>Blogium is a blogging platform inspired by Medium. It features a fully functional WYSIWYG text editor that I built from scratch. I gave it a sleek and minimalist design to focus users attention on reading and writing blog posts. It's a Full-Stack web app built using Javascript, CSS, React, Node, Express, and PostgreSQL.</p>
-        <div class="linkContainer">
-          <a class="projectLink" href="https://github.com/f3ve/Blogium" target="_blank">CLIENT REPO</a>
-          <a class="projectLink" href="https://github.com/f3ve/Blogium-api" target="_blank">API REPO</a>
-          <a class="projectLink" href="https://blogium.now.sh/" target="_blank">LIVE</a>
-        </div>
+      </nav>
+    </header>
+    <main class="center">
+      <section class="aboutMe hide">
+        <h2>About Me</h2>
+        <img
+          src="images/heroImg2.jpg"
+          alt="a picture of Freedom"
+          id="heroImg"
+          class="heroImg"
+        />
+        <p>
+          I am a Full-Stack Developer specializing in React and NodeJS. I'm
+          passionate about tech and I love experimenting with new tools. I've
+          been building computers since I was fifteen years old and any time I
+          get a knew gadget I have to find all the ways I can tinker with it (or
+          break it). I have an eclectic taste in literature; some of my favorite
+          authors include Albert Camus, Patrick Rothfuss, Ken Follett, and
+          Jeanette Winterson. I'm also a big fan of World of Warcraft (for the
+          Horde!). I'm open to new opportunities and would love to work with a
+          team of knowledgeable programmers that can help me learn and grow as a
+          developer.
+        </p>
+        <address class="contactMe">
+          <div class="styleMe">
+            <a class="contact" href="mailto:freedom.evenden@pm.me">Email</a>
+            <a class="contact" href="https://github.com/f3ve" target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="contact"
+              href="https://www.linkedin.com/in/freedom-evenden-dev/"
+              target="_blank"
+              >linkedin</a
+            >
+            <a
+              class="contact"
+              href="https://medium.com/@ftevenden1"
+              target="_blank"
+              >Blog</a
+            >
+          </div>
+        </address>
       </section>
-      <section class="project" id="project3">
-        <img src="images/build-tech.png" alt="Picture of buildTech's create build page" id="buildTechImg" class="projectImg">
-        <h3>BuildTech</h3>
-        <p>BuildTech is a Fallout 4 build manager. I am a huge fan of the Fallout franchise and wanted to show my love by creating an app I always wished I had when I first started playing the game. This is my first Full-Stack web app. It was created using JavaScript, CSS, ReactJS, NodeJS, Express, and PostgreSQL.</p>
-        <div class="linkContainer">
-          <a class="projectLink" href="https://github.com/f3ve/Build-Tech-Client" target="_blank">CLIENT REPO</a>
-          <a class="projectLink" href="https://github.com/f3ve/build-tech-api" target="_blank">API REPO</a>
-          <a class="projectLink" href="https://build-tech.now.sh/" target="_blank">LIVE</a>
-        </div>
+      <section class="projects-box">
+        <h2>My Projects</h2>
+        <section class="project" id="project4">
+          <img
+            src="images/blogium.png"
+            alt="Picture of a post from Blogium"
+            id="blogiumImg"
+            class="projectImg"
+          />
+          <h3>Blogium</h3>
+          <p>
+            Blogium is a blogging platform inspired by Medium. It features a
+            fully functional WYSIWYG text editor that I built from scratch. I
+            gave it a sleek and minimalist design to focus users attention on
+            reading and writing blog posts. It's a Full-Stack web app built
+            using Javascript, CSS, React, Node, Express, and PostgreSQL.
+          </p>
+          <div class="linkContainer">
+            <a
+              class="projectLink"
+              href="https://github.com/f3ve/Blogium"
+              target="_blank"
+              >CLIENT REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://github.com/f3ve/Blogium-api"
+              target="_blank"
+              >API REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://blogium.now.sh/"
+              target="_blank"
+              >LIVE</a
+            >
+          </div>
+        </section>
+        <section class="project" id="project3">
+          <img
+            src="images/build-tech.png"
+            alt="Picture of buildTech's create build page"
+            id="buildTechImg"
+            class="projectImg"
+          />
+          <h3>BuildTech</h3>
+          <p>
+            BuildTech is a Fallout 4 build manager. I am a huge fan of the
+            Fallout franchise and wanted to show my love by creating an app I
+            always wished I had when I first started playing the game. This is
+            my first Full-Stack web app. It was created using JavaScript, CSS,
+            ReactJS, NodeJS, Express, and PostgreSQL.
+          </p>
+          <div class="linkContainer">
+            <a
+              class="projectLink"
+              href="https://github.com/f3ve/Build-Tech-Client"
+              target="_blank"
+              >CLIENT REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://github.com/f3ve/build-tech-api"
+              target="_blank"
+              >API REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://build-tech.now.sh/"
+              target="_blank"
+              >LIVE</a
+            >
+          </div>
+        </section>
+        <section class="project" id="project2">
+          <img
+            src="images/spacey.png"
+            alt="picture of the Spacey main page"
+            id="spaceyImg"
+            class="projectImg"
+          />
+          <h3>Spacey</h3>
+          <p>
+            I have always been fascinated by the universe and the possibilities
+            it presents us, and I love getting sucked into a Wikipedia rabbit
+            hole. So I created Spacey to let users easily find and become
+            absorbed in educational material about space. I used HTML, CSS,
+            JavaScript, and jQuery.
+          </p>
+          <div class="linkContainer">
+            <a
+              class="projectLink"
+              href="https://github.com/Fevenden/Spacey"
+              target="_blank"
+              >REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://fevenden.github.io/Spacey/"
+              target="_blank"
+              >LIVE</a
+            >
+          </div>
+        </section>
+        <section class="project" id="project1">
+          <img
+            src="images/SkyrimQuiz.png"
+            alt="picture of the main page of my Skyrim quiz."
+            id="skyrimQuizImg"
+            class="projectImg"
+          />
+          <h3>Skyrim Quiz</h3>
+          <p>
+            This was the first app I created using jQuery. It’s a simple quiz
+            app that directs users through a series of 5 questions. To create
+            this app, I used HTML, CSS, JavaScript, and jQuery.
+          </p>
+          <div class="linkContainer">
+            <a
+              class="projectLink"
+              href="https://github.com/Fevenden/quiz-app-project"
+              target="_blank"
+              >REPO</a
+            >
+            <a
+              class="projectLink"
+              href="https://fevenden.github.io/quiz-app-project/"
+              target="_blank"
+              >LIVE</a
+            >
+          </div>
+        </section>
       </section>
-      <section class="project" id="project2">
-        <img src="images/spacey.png" alt="picture of the Spacey main page" id="spaceyImg" class="projectImg">
-        <h3>Spacey</h3>
-        <p>I have always been fascinated by the universe and the possibilities it presents us, and I love getting sucked into a Wikipedia rabbit hole. So I created Spacey to let users easily find and become absorbed in educational material about space. I used HTML, CSS, JavaScript, and jQuery.</p>
-        <div class="linkContainer">
-          <a class="projectLink" href="https://github.com/Fevenden/Spacey" target="_blank">REPO</a>
-          <a class="projectLink" href="https://fevenden.github.io/Spacey/" target="_blank">LIVE</a>
-        </div>
-      </section>
-      <section class="project" id="project1">
-        <img src="images/SkyrimQuiz.png" alt="picture of the main page of my Skyrim quiz." id="skyrimQuizImg" class="projectImg">
-        <h3>Skyrim Quiz</h3>
-        <p>This was the first app I created using jQuery. It’s a simple quiz app that directs users through a series of 5 questions. To create this app, I used HTML, CSS, JavaScript, and jQuery.</p>
-        <div class="linkContainer">
-          <a class="projectLink" href="https://github.com/Fevenden/quiz-app-project" target="_blank">REPO</a>
-          <a class="projectLink" href="https://fevenden.github.io/quiz-app-project/" target="_blank">LIVE</a>
-        </div>
-      </section>
-    </section>
-  </main>
-  <footer class="footer">
-  </footer>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="index.js"></script>  
-</body>
+    </main>
+    <footer class="footer"></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>

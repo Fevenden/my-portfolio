@@ -31,7 +31,7 @@ footer {
 }
 
 .menu {
-  display:none;
+  display: none;
 }
 
 .hiddenMenu {
@@ -39,14 +39,14 @@ footer {
   height: 50px;
   position: fixed;
   left: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   top: -50px;
   transition: top 0.5s;
   z-index: -1;
 }
 
-.hiddenMenu.expose{
-  top:50px;
+.hiddenMenu.expose {
+  top: 50px;
 }
 
 .hiddenList {
@@ -115,7 +115,8 @@ main {
   margin-bottom: 5px;
 }
 
-.aboutMe p, .projects-box p {
+.aboutMe p,
+.projects-box p {
   text-align: left;
   margin-bottom: 25px;
 }
@@ -126,7 +127,7 @@ main {
   padding-top: 10px;
   padding-bottom: 40px;
   border-bottom: 2px solid black;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
 .projectImg {
@@ -155,7 +156,8 @@ footer h2 {
   justify-content: space-evenly;
 }
 
-.navLink, .projectLink {
+.navLink,
+.projectLink {
   color: rgb(0, 255, 149);
 }
 
@@ -177,7 +179,8 @@ a:visited {
   color: rgb(0, 255, 149);
 }
 
-a:hover, a:focus{
+a:hover,
+a:focus {
   cursor: pointer;
   color: white;
 }
@@ -227,7 +230,7 @@ a:active {
 
   main.center {
     margin-left: 20%;
-    margin-right: auto
+    margin-right: auto;
   }
 
   main {
@@ -242,14 +245,14 @@ a:active {
   }
 
   h1 {
-    font-size: 30px
+    font-size: 30px;
   }
 
   .hamburger {
     display: none;
   }
 
-  .menu{
+  .menu {
     display: block;
   }
 
@@ -258,5 +261,4 @@ a:active {
     margin-left: 10px;
     margin-right: 10px;
   }
-
 }
